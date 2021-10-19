@@ -2,14 +2,361 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-5.1.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.1.2-dist/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <script src="https://kit.fontawesome.com/723dd4dd45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styleHome.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Page Icon -->
+    <link rel="icon" href="./assets/pageIcon.png">
+
+    <title>Twinvolt - Home</title>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <!-- Main Container -->
+    <div class="container-fluid main">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> &#9889; Twinvolt</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contatos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Galeria
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./galeriaEI.html">Elétrica Interna</a></li>
+                                <li><a class="dropdown-item" href="./galeriaMC.html">Medição Coletiva</a></li>
+                                <li><a class="dropdown-item" href="./galeriaSA.html">Subestação Aérea</a></li>
+                                <li><a class="dropdown-item" href="./galeriaFV.html">Fotovoltaico</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section One -->
+        <div class="sectionOne">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">Bem vindos a Twinvolt!</h1>
+                            <p class="lead">Serviços de enegnharia elétrica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/carousel1.jpg" class="d-block w-100" alt="Image 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="carouselText">
+                                        <h6>Engenharia Elétrica</h6>
+                                        <p>
+                                            Somos apaixonados por engenharia e resolução de desafios.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/carousel2.jpg" class="d-block w-100" alt="Image 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="carouselText">
+                                        <h6>Projetos Elétricos</h6>
+                                        <p>
+                                            Projetamos com seriedade, sem pular etapas e seguindo todas as normas
+                                            vigentes, com atenção a segurança.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/carousel3.jpg" class="d-block w-100" alt="Image 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <div class="carouselText">
+                                        <h6>Atendimento Geral</h6>
+                                        <p>
+                                            Estamos aqui para te ajudar a resolver diversos problemas na área de
+                                            engenharia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <!-- Section Two -->
+        <div class="sectionTwo">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Deleniti, voluptas expedita incidunt obcaecati debitis eos
+                                doloremque! Doloremque id praesentium eaque harum ullam
+                                aliquid officiis ad magnam, pariatur commodi. Iusto, est.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Distinctio, ducimus pariatur at delectus, eaque ipsa
+                                exercitationem corporis placeat incidunt, suscipit assumenda
+                                dicta accusamus deleniti voluptatem eligendi sapiente
+                                molestias facere sit!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="buttonWrapper">
+                        <button type="button" class="btn btn-lg yellowBtn" data-bs-toggle="modal"
+                            data-bs-target="#sectionTwoModal">
+                            Solicite Orçamentos!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Three -->
+        <div class="sectionThree">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-3">
+                            <img src="./assets/homeEI.jpg" class="img-fluid projects" alt="Elétrica Interna">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="buttonWrapper2">
+                                        <button type="button" class="btn yellowBtn2" data-bs-toggle="modal"
+                                            data-bs-target=".sl-modal-lg">
+                                            Elétrica Interna
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <img src="./assets/homeMC.jpg" class="img-fluid projects" alt="Medição Coletiva">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="buttonWrapper2">
+                                        <button type="button" class="btn yellowBtn2" data-bs-toggle="modal"
+                                            data-bs-target=".bg-modal-md">
+                                            Medição Coletiva
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <img src="./assets/homeSA.jpg" class="img-fluid projects" alt="Subestação Aérea">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="buttonWrapper2">
+                                        <button type="button" class="btn yellowBtn2" data-bs-toggle="modal"
+                                            data-bs-target=".sa-modal-sm">
+                                            Subestação Aérea
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-3">
+                            <img src="./assets/homeFV.jpg" class="img-fluid projects" alt="Fotovoltaico">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="buttonWrapper2">
+                                        <button type="button" class="btn yellowBtn2" data-bs-toggle="modal"
+                                            data-bs-target=".sa-modal-sm">
+                                            Fotovoltaico
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-2">
+                        <img src="./assets/footerImg.png" class="img-fluid footerImg" alt="Footer Image" />
+                    </div>
+                    <div class="col-sm-12 col-lg-10 socialMediaWrapper">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-square myIcon fa-3x"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram myIcon fa-3x"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok myIcon fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modals -->
+
+        <!-- Section Two Modal -->
+        <div class="modal fade" id="sectionTwoModal" tabindex="-1" aria-labelledby="sectionTwoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="contentLabel">
+                            Solicite um orçamento gratuito!
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="./assets/modalImg.jpg" class="img-fluid modal-img" alt="Modal Image">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="modalFormWrapper">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="forName" class="form-label">Qual seu nome?</label>
+                                                <input type="text" class="form-control" id="formName"
+                                                    placeholder="Full Name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="forEmail" class="form-label">Qual seu email?</label>
+                                                <input type="email" class="form-control" id="formEmail"
+                                                    placeholder="Email Address">
+                                                <div id="emailHelp" class="form-text">
+                                                    Não compartilhamos seu email em hipótese alguma.
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn">Enviar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Street Lifestyle Modal -->
+        <div class="modal fade sl-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/bpOSxM0rNPM" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>You can add more content in this modal!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boards and Gear Modal -->
+        <div class="modal fade bg-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/riV77WoFCBw" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>You can add more content in this modal!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skate Away Modal -->
+        <div class="modal fade sa-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/PeQAZsyucbQ" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p>You can add more content in this modal!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap-5.1.2-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

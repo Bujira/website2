@@ -1,0 +1,142 @@
+.container-fluid.main {
+    padding: 0;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 4.5rem;
+  }
+  
+  .sectionOne {
+    background-color: #eceeef;
+    padding: 2rem;
+  }
+  
+  .sectionTwo {
+    background-color: #cccccc;
+    padding: 2rem;
+  }
+  
+  .sectionThree {
+    background-color: #eceeef;
+    padding: 2rem;
+  }
+  
+  .buttonWrapper {
+    margin-top: 15px;
+  }
+  
+  .buttonWrapper2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  button.yellowBtn {
+    color: black;
+    background-color: rgb(255, 255, 100);
+    display: block;
+    margin: auto;
+  }
+  
+  button.yellowBtn2 {
+    color: black;
+    background-color: rgb(255, 255, 100);
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  
+  .modal-body img.modal-img {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  
+  .modal-body form button {
+    color: black;
+    background-color: rgb(255, 255, 50);
+  }
+  
+  .modalFormWrapper {
+    padding: 1rem;
+  }
+  
+  .sectionTwo img.skate {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin: auto;
+  }
+  
+  .sectionTwo img.pill {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin: auto;
+  }
+  
+  .sectionThree img.tricks {
+    padding: 0.25rem;
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+  
+  .footer img.footerImg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    margin: auto;
+  }
+  
+  .socialMediaWrapper {
+    margin: auto;
+  }
+  
+  .myIcon {
+    color: #eee;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  /* --- Mobile --- */
+  @media screen and (max-width: 974px) {
+    .jumbotron h1 {
+      font-size: 2.5rem;
+    }
+  
+    .sectionTwo img.skate {
+      width: 70%;
+      display: block;
+      margin: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .sectionTwo img.pill {
+      width: 70%;
+      display: block;
+      margin: auto;
+    }
+  
+    .modal-body img.modal-img {
+      width: 100%;
+    }
+  
+    .sectionThree img.tricks {
+      width: 100%;
+    }
+  
+    button.yellowBtn2 {
+      width: 95%;
+    }
+  
+    .socialMediaWrapper {
+      text-align: center;
+    }
+  }  
